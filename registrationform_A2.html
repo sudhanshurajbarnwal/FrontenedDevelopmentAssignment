@@ -1,0 +1,107 @@
+<!-- ASSIGNMENT 2 -->
+ <!-- College Admission Registration Form -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quad AI Admission Form</title>
+
+
+    <style>
+        body{
+            background-color: rgba(185, 222, 242, 0.51);
+        }
+        h3{
+            color: rgba(236, 125, 5, 0.936);
+            text-decoration: underline;
+
+        }
+        fieldset{
+            border-style: double;
+            border-color: red;
+        }
+
+        
+
+    </style>
+  </head>
+  <body>
+    <!-- TASK 1 -->
+     <header>
+        <h1 style="color: coral;">QUAD AI Admission Form</h1>
+        <h2>QUAD AI SCHOOL OF TECHNOLOGY Admission Registration Form.</h2>
+     </header>
+        
+    <form action="./register">
+        <h3>Register for Admissions 2026</h3>
+        <!-- TASK 2 -->
+         <fieldset><h3><u>Personal Information</u></h3>
+         <p>Name:<input type="text" id="name" placeholder="Type your Name..." name="name"></p>
+         <p>E-mail:<input type="email" id="email" placeholder="Type your Email.." name="email"></p>
+         <p>Mobile:<input type="tel" id="phone" placeholder="Type your Number..." name="phone"></p>
+         <p>DOB: <input type="date" id="dob" placeholder="Select your DOB" name="dob"></p>
+         <p>Password: <input type="password" id="pass" placeholder="Create Password" name="password"></p>
+         <!-- TASK 3 -->       
+          <p>Gender:
+          <input type="radio" name="gen" value="Male">Male 
+          <input type="radio" name="gen" value="Female">Female </p>
+          </fieldset><br>
+
+          <!-- TASK 4 -->
+           <fieldset ><h3>Academic & Interest</h3>
+           Course:
+           <select name="course">
+            <option>---select---</option>
+            <option>B.Tech CSE</option>
+            <option>B.Tech AI/ML</option>
+            <option>BBA</option>
+            <option>BCA</option>
+           </select><br><br>
+           
+
+           <!-- TASK 5 -->
+            <h3>Choose Interest:</h3> <br>
+            <input type="checkbox" name="interest" value="coding" > Coding<br>
+            <input type="checkbox" name="interest" value="sports"> Sports<br>
+            <input type="checkbox" name="interest" value="music"> Music<br>
+            <input type="checkbox" name="interest" value="reading"> Reading<br>
+            </fieldset><br>
+
+            <!-- TASK 6 -->
+             <fieldset><h3>Address</h3>
+             <textarea placeholder="Type your address..." rows="3" name="address"></textarea><br>
+             </fieldset><br>
+             
+             <!-- TASK 7 -->
+              <fieldset><h3>Required Document:</h3>
+              <p>
+              Photograph: <input type="file" name="photo" value="photo"><br>
+              <label for="doc" style="font-size: 11px;">photo must be upload in format: PNG,JPEG,JPG</label><br><br>
+              Supporting Docs: <input type="file" name="doc"><br>
+              <label for="doc" style="font-size: 11px;">Supporting docs upload in format: PDF*</label>
+              </p>
+              </fieldset><br>
+
+              <!-- TASK 8 -->
+               <input type="checkbox" name="term">I agree <a href="https://www.quadcse.com/faqs">term & condition</a> for register the form.<br>
+
+               <!-- TASK 9 -->
+                <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                </p>
+
+                <!-- TASK 10  -->
+              <!-- label tag use where needed use in Q.7 -->
+
+              <!-- BONUS CHALLENGE -->
+               <!-- Use above TASK -->
+               
+
+            
+
+
+    </form>
+  </body>
+  </html>
